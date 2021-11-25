@@ -1,0 +1,249 @@
+<resources>
+    <string name="app_name">Financial Ratio Calculator</string>
+    <!-- -
+     Navigation Menu
+      <!- -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="menu_home">Home</string>
+    <string name="communicate">Communicate</string>
+    <string name="rate">Rate this app</string>
+    <string name="refer">Refer this app</string>
+    <string name="more">More apps from us</string>
+    <!-- -
+    Main Activity
+     <!- -->
+    <string name="app_message_title">Financial Ratio Calculator</string>
+    <string name="app_message">20 different ratio calculators covering 5 key financial ratios. Select a ratio from the below and use the calculator:</string>
+    <string name="select_calculator">Select a calculator from below:</string>
+    <string name="label_profitability">Profitability</string>
+    <string name="profitability_description">Profitability ratio is a financial metrics that is used to measure profit generation and management.
+    </string>
+    <string name="label_liquidity">Liquidity</string>
+    <string name="liquidity_description">Liquidity ratio is a financial metrics that is used to determine a companies
+        ability to pay short and long-term liabilities (Loans/Bills payable) without raising external capital. </string>
+    <string name="label_efficiency">Efficiency</string>
+    <string name="efficiency_description">Efficiency ratio is a financial metrics that is used to measure, how well a company can use its assets and liabilities to generate income.
+        It is also called as activity ratios.</string>
+    <string name="label_leverage">Leverage</string>
+    <string name="leverage_description">Financial Leverage ratio is a financial metrics that is used to measure, how effectively a company can manage its debt to generate income.
+        </string>
+    <string name="label_market">Market</string>
+    <string name="market_description">Market value ratio is a financial metrics that is used to evaluate the value of a publicly traded company based on its reported financial and current market price.
+        </string>
+    <!-- -
+      Common Captions/Label
+       <!- -->
+    <string name="button_calculate">Calculate</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_share">Share</string>
+    <string name="label_caption">What does it mean?</string>
+    <string name="label_input">Your Input:</string>
+    <string name="user_input">Enter a numeric value</string>
+    <string name="net_sales">Net Sales</string>
+    <string name="net_income">Net Income</string>
+    <string name="goods_sold">Cost of Goods Sold</string>
+    <string name="shareholder_equity">Shareholders Equity </string>
+    <string name="earnings_before_tax">Earnings Before Interest and Tax</string>
+    <string name="interest_expense">Interest Expense</string>
+    <string name="total_assets">Total Assets</string>
+    <string name="Long_Term">Long-term Liabilities:</string>
+    <string name="current_assets">Current Assets</string>
+    <string name="current_liabilities">Current Liabilities</string>
+    <string name="inventory">Inventory</string>
+    <string name="cash_equivalents">Cash Equivalents</string>
+    <string name="marketable_securities">Marketable Securities</string>
+    <string name="total_assets_begin">Beginning Total Assets</string>
+    <string name="total_assets_end">Ending Total Assets</string>
+    <string name="accounts_receivable_begin">Beginning Accounts Receivable</string>
+    <string name="accounts_receivable_end">Ending Accounts Receivable</string>
+    <string name="inventory_begin">Beginning Inventory</string>
+    <string name="inventory_end">Ending Inventory</string>
+    <string name="total_equity">Total Equity</string>
+    <string name="total_liabilities">Total Liabilities</string>
+    <string name="preferred_dividends">Preferred Dividends</string>
+    <string name="share_price">Share Price</string>
+    <string name="shares_outstanding">Shares Outstanding</string>
+    <string name="total_dividends">Total Dividends</string>
+    <!-- -
+       Module 1 - Profitability
+       <!- -->
+    <string name="menu_profitability">Profitability Ratio</string>
+    <string name="info_profitability">Profitability ratio is a measure that helps, an investor or lender to understand the net amount of returns
+        made out of a firms sales, assets and equity. Some of the most commonly used profitability ratios -
+        Net Profit Margin, Gross Profit Margin, Return on Equity (ROE), Return on Capital Employed (ROCE), Return on Assets (ROA)
+        and Return on Investment (ROI).
+        </string>
+    <!-- -   Calculator 1 <!- -->
+    <string name="net_margin">Net Profit Margin Ratio Calculator</string>
+    <string name="info_net_margin">
+    Key in the Net Sales and Net Income Values to the respective fields given below and
+        then click Calculate:</string>
+    <string name="label_net_margin">Net Margin</string>
+    <string name="result_label_net_margin">Your Net Profit Margin:</string>
+    <!-- -   Calculator 2 <!- -->
+    <string name="gross_margin">Gross Profit Margin Ratio Calculator</string>
+    <string name="info_gross_profit_margin">
+    Key in the Net Sales and Cost of Goods (COGS) Values to the respective fields given below and
+        then click Calculate:</string>
+    <string name="label_gross_margin">Gross Margin</string>
+    <string name="result_label_gross_margin">Your Gross Profit Margin:</string>
+    <!-- -   Calculator 3 <!- -->
+    <string name="return_ratio">Return on Equity Ratio Calculator</string>
+    <string name="info_return_ratio">
+     Key in the Net Income and Total Shareholders’ Equity Values to the respective fields given below
+        and then click Calculate:</string>
+    <string name="label_return_ratio">Equity Ratio</string>
+    <string name="result_label_return_ratio">Your Return on Equity:</string>
+    <!-- -   Calculator 4 <!- -->
+    <string name="capital_ratio">Return on Capital Employed Ratio Calculator</string>
+    <string name="info_capital_ratio">
+     Key in the Earnings Before Interest and Taxes (EBIT), Total Assets and Current Liabilities Values to the respective
+        fields given below and then click Calculate:</string>
+    <string name="label_capital_ratio">ROCE</string>
+    <string name="result_label_capital_ratio">Your Return on Capital Employed:</string>
+    <!-- -   Calculator 5 <!- -->
+    <string name="assets_ratio">Return on Assets Ratio Calculator</string>
+    <string name="info_assets_ratio">
+     Key in the Net Income and Total Assets Values to the respective fields given below and
+        then click Calculate:</string>
+    <string name="label_assets_ratio">ROA</string>
+    <string name="result_label_assets_ratio">Your Return on Assets:</string>
+    <!-- -   Calculator 6 <!- -->
+    <string name="investment_ratio">Return on Investment Ratio Calculator</string>
+    <string name="info_investment_ratio">
+     Key in the Net Income, Shareholders Equity and Long-term Liabilities Values to the respective fields given below
+        and then click Calculate:
+     </string>
+    <string name="label_investment_ratio">ROI</string>
+    <string name="result_label_investment_ratio">Your Return on Investment:</string>
+    <!-- -
+              Module 2 - Liquidity
+       <!- -->
+    <string name="menu_liquidity">Liquidity Ratio</string>
+    <string name="info_liquidity">Liquidity ratio is a measure that helps, an investor or lender to understand a firms ability
+        to pay its short-term and long-term liability. Some of the most commonly used liquidity ratios - Current Ratio,
+        Quick Ratio, Cash Ratio and Net Working Capital Ratio.</string>
+    <!-- -   Calculator 1 <!- -->
+    <string name="current_ratio">Current Ratio Calculator</string>
+    <string name="info_current_ratio">
+     Key in the Current Assets and Current Liabilities Values to the respective fields given below and then click Calculate:</string>
+    <string name="label_current_ratio">Current Ratio </string>
+    <string name="result_label_current_ratio">Your Current Ratio:</string>
+    <!-- -   Calculator 2 <!- -->
+    <string name="quick_ratio">Quick Ratio Calculator</string>
+    <string name="info_quick_ratio">
+    Key in the Current Assets, Inventory and Current Liabilities Values to the respective fields given below
+        and then click Calculate:</string>
+    <string name="label_quick_ratio">Quick Ratio </string>
+    <string name="result_label_quick_ratio">Your Quick Ratio:</string>
+    <!-- -   Calculator 3 <!- -->
+    <string name="cash_ratio">Cash Ratio Calculator</string>
+    <string name="Info_Cash_Ratio">Key in the Cash Equivalents, Marketable Securities and Current Liabilities Values to the
+        respective fields given below and then click Calculate:</string>
+    <string name="label_cash_ratio">Cash Ratio </string>
+    <string name="result_label_cash_ratio">Your Cash Ratio:</string>
+    <!-- -   Calculator 4 <!- -->
+    <string name="working_capital">Net Working Capital Ratio Calculator </string>
+    <string name="info_working_capital">Key in the Current Assets, Current Liabilities and Total Assets Values to the
+        respective fields given below and then click Calculate:</string>
+    <string name="label_working_capital">NWC Ratio </string>
+    <string name="result_label_working_capital">Your Net Working Capital Ratio:</string>
+    <!-- -
+              Module 3 - Efficiency
+       <!- -->
+    <string name="menu_efficiency">Efficiency Ratio</string>
+    <string name="info_efficiency">Efficiency ratio is a measure that helps, an investor or lender to understand a firms
+        ability in utilizing its assets and liabilities to generate income.
+        Some of the most commonly used Efficiency ratios - Assets turnover ratio, Accounts receivable turnover ratio
+        and Inventory turnover ratio.</string>
+    <!-- -   Calculator 1 <!- -->
+    <string name="turnover_ratio">Assets Turnover Calculator</string>
+    <string name="info_turnover_ratio">
+     Key in the values of Net Sales, Total Assets at the beginning and ending of the year to the respective fields
+        given below and then click Calculate:</string>
+    <string name="label_turnover_ratio">Turnover Ratio</string>
+    <string name="result_label_turnover_ratio">Your Assets Turnover Ratio:</string>
+    <!-- -   Calculator 2 <!- -->
+    <string name="receivable_ratio">Accounts Receivable Turnover Calculator</string>
+    <string name="info_receivable_ratio">
+     Key in the values of Net Sales, Accounts Receivable at the beginning and ending of the year
+        to the respective fields given below and then click Calculate:</string>
+    <string name="result_label_receivable_ratio">Accounts Receivable Turnover Calculator</string>
+    <string name="label_receivable_ratio">Receivable Ratio</string>
+    <!-- -   Calculator 3 <!- -->
+    <string name="inventory_ratio">Your Inventory Turnover Ratio:</string>
+    <string name="info_inventory_ratio">
+        Key in the Cost of Goods Sold (COGS), Inventory at the beginning and ending values to the respective fields given
+        below and then click Calculate:</string>
+    <string name="label_inventory_ratio">Inventory Ratio</string>
+    <string name="result_label_inventory_ratio">Your Inventory Turnover Ratio:</string>
+    <!-- -
+          Module 4 - Financial Leverage
+       <!- -->
+    <string name="menu_leverage">Leverage Ratio</string>
+    <string name="info_leverage">Financial leverage ratio is a measure that helps,
+        an investor or lender to understand the capital structure of a firm.
+        Some of the most commonly used financial leverage ratios - debt to equity (D/E) ratio,
+        debt ratio, equity ratio and interest coverage ratio.  </string>
+    <!-- -   Calculator 1 <!- -->
+    <string name="debt_equity">Debt to Equity Calculator</string>
+    <string name="info_debt_equity">
+     Key in the Total Liabilities and Total Equity Values to the respective fields given below and
+        then click Calculate:</string>
+    <string name="label_debt_equity">D/E Ratio</string>
+    <string name="result_label_debt_equity">Your Debt Equity Ratio:</string>
+    <!-- -   Calculator 2 <!- -->
+    <string name="debt_ratio">Debt Ratio Calculator</string>
+    <string name="info_debt_ratio">
+    Key in the Total Liabilities and Total Assets Values to the respective fields given below
+        and then click Calculate:</string>
+    <string name="label_debt_ratio">Debt Ratio</string>
+    <string name="result_label_debt_ratio">Your Debt Ratio:</string>
+    <!-- -   Calculator 3 <!- -->
+    <string name="equity_ratio">Equity Ratio Calculator</string>
+    <string name="info_equity_ratio">
+     Key in the Total Equity and Total Assets Values to the respective fields given below and
+        then click Calculate:</string>
+    <string name="label_equity_ratio">Equity Ratio</string>
+    <string name="result_label_equity_ratio">Your Equity Ratio:</string>
+    <!-- -   Calculator 4 <!- -->
+    <string name="coverage_ratio">Interest Coverage Calculator</string>
+    <string name="info_coverage_ratio">
+     Key in the Earnings before interest and tax (EBIT) and Interest Expense Values to the respective fields
+        given below and then click Calculate:</string>
+    <string name="label_coverage_ratio">Coverage Ratio</string>
+    <string name="result_label_coverage_ratio">Your Interest Coverage Ratio:</string>
+    <!-- -
+              Module 5 - Market Value
+       <!- -->
+    <string name="menu_market">Market Ratio</string>
+    <string name="info_market">Market prospect ratio is used to measure a firms performance from an investor perspective.
+        Some of the most commonly used market prospect ratios - Earnings per share (EPS), Price to earnings (P/E) ratio and Dividend payout ratio.
+        </string>
+    <!-- -   Calculator 1 <!- -->
+    <string name="earnings_ratio">Earnings Per Share Calculator</string>
+    <string name="info_earnings_ratio">
+    Key in the Net Income, Preferred Dividends and Shares Outstanding Values to the respective fields
+        given below and then click Calculate:</string>
+    <string name="label_earnings_ratio">EPS Ratio</string>
+    <string name="result_label_earnings_ratio">Your Earnings Per Share:</string>
+    <!-- -   Calculator 2 <!- -->
+    <string name="price_ratio">Price to Earnings Ratio Calculator</string>
+    <string name="info_price__ratio">
+Key in the Net Income, Preferred Dividends, Shares Outstanding and Market Value Per Share
+        to the respective fields given below and then click Calculate:</string>
+    <string name="label_price_ratio">P/E Ratio</string>
+    <string name="result_label_price_ratio">Your Price to Earnings Ratio:</string>
+    <!-- -   Calculator 3 <!- -->
+    <string name="dividend_ratio">Dividend Payout Ratio Calculator</string>
+    <string name="info_dividend_ratio">
+Key in the Total Dividends Paid and Net Income Values to the
+respective fields given below and then click Calculate:</string>
+    <string name="label_dividend_ratio">Dividend Ratio </string>
+    <string name="result_label_dividend_ratio">Your Dividend Payout Ratio:</string>
+
+
+</resources>
+
+

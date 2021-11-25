@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="usd_us_dollar">USD – US Dollar</string>
+    <string name="cad_canadian_dollar">CAD – Canadian Dollar</string>
+    <string name="gbp_pound_sterling">GBP - Pound Sterling</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="share">share</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <!-- spinner Currency  items <!-->
+    <string-array name="spinner_currency_items">
+        <item>USD</item>
+        <item>CAD</item>
+        <item>INR</item>
+
+    </string-array>
+    <!-- spinner Currency  items <!-->
+    <string-array name="spinner_currency_items1">
+        <item>INR</item>
+        <item>CAD</item>
+        <item>USD</item>
+
+    </string-array>
+    <string-array name="spinner_majors_country">
+        <item>INR</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>CHF</item>
+        <item>AUD</item>
+        <item>CAD</item>
+    </string-array>
+    <string-array name="spinner_majors_country1">
+        <item>INR-Indian Rupee</item>
+        <item>USD-United States Dollar</item>
+        <item>EUR-Euro</item>
+        <item>JPY-Japanese Yen</item>
+        <item>GBP-British Pound Sterling</item>
+        <item>CHF-Swiss Franc</item>
+        <item>AUD-Australian Dollar</item>
+        <item>CAD-Canadian Dollar</item>
+    </string-array>
+    <string-array name="spinner_All_country">
+        <item>INR-Indian Rupee</item>
+        <item>USD-United States Dollar</item>
+        <item>EUR-Euro</item>
+    </string-array>
+</resources>

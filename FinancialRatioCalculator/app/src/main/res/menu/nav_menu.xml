@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/main_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+
+        <item android:id="@+id/profitability"
+            android:icon="@mipmap/ic_menu_profitability"
+            android:title="@string/menu_profitability"/>
+
+        <item android:id="@+id/liquidity"
+            android:icon="@mipmap/ic_menu_liquidity"
+            android:title="@string/menu_liquidity"/>
+
+        <item android:id="@+id/efficiency"
+            android:icon="@mipmap/ic_menu_efficiency"
+            android:title="@string/menu_efficiency"/>
+
+        <item android:id="@+id/leverage"
+            android:icon="@mipmap/ic_menu_leverage"
+            android:title="@string/menu_leverage"/>
+
+        <item android:id="@+id/market"
+            android:icon="@mipmap/ic_menu_market"
+            android:title="@string/menu_market"/>
+    </group>
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_rating"
+                android:title="@string/rate" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/refer" />
+
+            <item android:id="@+id/nav_apps"
+                android:icon="@drawable/ic_menu_more"
+                android:title="@string/more"/>
+        </menu>
+    </item>
+</menu>
+

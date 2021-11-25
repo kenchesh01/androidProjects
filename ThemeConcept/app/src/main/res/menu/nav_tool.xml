@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/lightTheme"
+        android:title="Light (default)"
+        />
+    <item
+        android:id="@+id/blueTheme"
+        android:title="Blue"
+        />
+    <item
+        android:id="@+id/redTheme"
+        android:title="Red"
+        />
+    <item
+        android:id="@+id/greenTheme"
+        android:title="Green"
+        />
+</menu>

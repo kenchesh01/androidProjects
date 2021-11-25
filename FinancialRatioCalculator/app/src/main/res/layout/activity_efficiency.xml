@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Efficiency">
+
+    <ScrollView
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:scrollbarStyle="insideOverlay"
+        android:layout_marginLeft="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title"
+                android:layout_marginTop="8dp"
+                android:text="@string/menu_efficiency"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/activity_information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:text="@string/select_calculator"
+                android:textColor="#000000"
+                android:textSize="@dimen/body"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/activity_label" />
+
+            <ImageView
+                android:id="@+id/turnover_ratio"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/label_turnover_ratio"
+                android:gravity="center"
+                android:onClick="turnover_ratio"
+                ads:layout_constraintEnd_toStartOf="@id/receivable_ratio"
+                ads:layout_constraintStart_toStartOf="@id/activity_information"
+                ads:layout_constraintTop_toBottomOf="@id/activity_information"
+                app:srcCompat="@mipmap/ic_turnover__ratio" />
+
+            <ImageView
+                android:id="@+id/receivable_ratio"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/label_receivable_ratio"
+                android:gravity="center"
+                android:onClick="receivable_ratio"
+                ads:layout_constraintEnd_toEndOf="@id/activity_information"
+                ads:layout_constraintStart_toEndOf="@id/turnover_ratio"
+                ads:layout_constraintTop_toBottomOf="@id/activity_information"
+                app:srcCompat="@mipmap/ic_receivable__ratio" />
+
+            <TextView
+                android:id="@+id/label_turnover_ratio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="turnover_ratio"
+                android:text="@string/label_turnover_ratio"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@+id/turnover_ratio"
+                ads:layout_constraintStart_toStartOf="@id/turnover_ratio"
+                ads:layout_constraintTop_toBottomOf="@id/turnover_ratio" />
+
+            <TextView
+                android:id="@+id/label_receivable_ratio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="receivable_ratio"
+                android:text="@string/label_receivable_ratio"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@+id/receivable_ratio"
+                ads:layout_constraintStart_toStartOf="@id/receivable_ratio"
+                ads:layout_constraintTop_toBottomOf="@id/receivable_ratio" />
+
+            <ImageView
+                android:id="@+id/inventory_ratio"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/inventory_ratio"
+                android:onClick="inventory_ratio"
+                ads:layout_constraintEnd_toStartOf="@id/label_receivable_ratio"
+                ads:layout_constraintStart_toStartOf="@id/activity_information"
+                ads:layout_constraintTop_toBottomOf="@id/label_turnover_ratio"
+                app:srcCompat="@mipmap/ic_inventory__ratio" />
+
+
+            <TextView
+                android:id="@+id/label_inventory_ratio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="inventory_ratio"
+                android:text="@string/label_inventory_ratio"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@+id/inventory_ratio"
+                ads:layout_constraintStart_toStartOf="@id/inventory_ratio"
+                ads:layout_constraintTop_toBottomOf="@id/inventory_ratio" />
+
+            <TextView
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                ads:layout_constraintEnd_toEndOf="@id/guideline_end"
+                ads:layout_constraintStart_toStartOf="@id/guideline_start"
+                ads:layout_constraintTop_toBottomOf="@id/label_inventory_ratio"  />
+
+            <TextView
+                android:id="@+id/efficiency_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/white"
+                android:gravity="start|top"
+                android:text="@string/menu_efficiency"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/body"
+                android:textStyle="bold"
+                ads:layout_constraintEnd_toEndOf="@id/guideline_end"
+                ads:layout_constraintStart_toStartOf="@id/guideline_start"
+                ads:layout_constraintTop_toBottomOf="@id/divider" />
+
+            <TextView
+                android:id="@+id/efficiency_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="start|top"
+                android:background="#e7e7e7"
+                android:text="@string/info_efficiency"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@id/guideline_end"
+                ads:layout_constraintStart_toStartOf="@id/guideline_start"
+                ads:layout_constraintTop_toBottomOf="@id/efficiency_heading" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                ads:layout_constraintEnd_toEndOf="@id/guideline_end"
+                ads:layout_constraintStart_toStartOf="@id/guideline_start"
+                ads:layout_constraintTop_toBottomOf="@id/efficiency_description" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                ads:layout_constraintGuide_begin="20dp"
+                ads:layout_constraintGuide_percent=".10" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                ads:layout_constraintGuide_begin="20dp"
+                ads:layout_constraintGuide_percent=".90" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

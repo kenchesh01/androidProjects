@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Login Assignment</string>
+    <string name="main_activity_title">Assignment Activity</string>
+    <string name="main_activity_description">Select an activity from below:</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home_page">Home</string>
+    <string name="basic_login">Basic Login</string>
+    <string name="local_login">Local Login</string>
+    <string name="cloud_login">Cloud Login</string>
+    <string name="communicate">Communicate</string>
+    <string name="rate">Rate this app</string>
+    <string name="refer">Refer this app</string>
+    <string name="more">More apps from us</string>
+    <string name="prompt_email">Enter Email</string>
+    <string name="prompt_password">Enter Password</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_registration">User Registration</string>
+    <string name="register">Register</string>
+    <string name="welcome">WELCOME</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="app_message">Welcome</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="email">Email</string>
+    <string name="enter_name">Enter Name</string>
+
+    <string name="name_error">Please enter your name</string>
+    <string name="phone_error">Please enter a phone number</string>
+    <string name="email_error">Please enter a email address</string>
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_name">Please enter a minimum name of 2 characters</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+
+</resources>

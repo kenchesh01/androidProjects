@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.transposesolutions.justnumbers">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".AppTracker"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JustNumbers">
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713
+        -->
+        <meta-data
+            android:name="com.google.android.gms.ads.ca-app-pub-3940256099942544~3347511713"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name=".DivisionModule8Result"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule8"
+            android:label="@string/division_digits"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule7Result"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule7"
+            android:label="@string/division_2digits"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule6Result"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule6"
+            android:label="@string/division_digit"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule5Result"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule5"
+            android:label="@string/division_ten"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule4Result"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule4"
+            android:label="@string/divide_seven"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule3Result"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule3"
+            android:label="@string/divide_five"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule2Result"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule2"
+            android:label="@string/divide_three"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule1Result"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DivisionModule1"
+            android:label="@string/divide_two"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Division"
+            android:label="@string/activity_division"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule8Result"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule8"
+            android:label="@string/multiples_digits"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule7Result"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule7"
+            android:label="@string/multiples_digit"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule6Result"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule6"
+            android:label="@string/multiples_more"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule5Result"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule5"
+            android:label="@string/multiples_tens"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule4Result"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule4"
+            android:label="@string/multiples_seven"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule3Result"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule3"
+            android:label="@string/multiples_five"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule2Result"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule2"
+            android:label="@string/multiples_three"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule1Result"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MultiplicationModule1"
+            android:label="@string/multiples_two"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Multiplication"
+            android:label="@string/activity_multiplication"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule8Result"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule8"
+            android:label="@string/expanded_method"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule7Result"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule7"
+            android:label="@string/equations"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule6Result"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule6"
+            android:label="@string/doubles"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule5Result"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule5"
+            android:label="@string/three_addends"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule4Result"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule4"
+            android:label="@string/three_digits"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule3Result"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule3"
+            android:label="@string/three_digit"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule2Result"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule2"
+            android:label="@string/two_digits"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule1Result"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubtractionModule1"
+            android:label="@string/two_digit"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Subtraction"
+            android:label="@string/activity_subtraction"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule8Result"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule8"
+            android:label="@string/expanded_method"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule7Result"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule7"
+            android:label="@string/equations"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule6Result"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule6"
+            android:label="@string/doubles"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule5Result"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule5"
+            android:label="@string/three_addends"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule4Result"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule4"
+            android:label="@string/three_digits"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule3Result"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule3"
+            android:label="@string/three_digit"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule2Result"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule2"
+            android:label="@string/two_digits"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule1Result"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AdditionModule1"
+            android:label="@string/two_digit"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Addition"
+            android:label="@string/activity_addition"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MyAppSettings"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorPortrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu tools:showIn="navigation_view"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+
+    <item android:title="@string/home_page"
+        android:icon="@drawable/ic_menu_home"
+        android:id="@+id/main_home"/>
+
+    <item android:title="@string/nav_addition"
+        android:icon="@drawable/ic_menu_addition"
+        android:id="@+id/addition"/>
+
+    <item android:title="@string/nav_subtraction"
+        android:icon="@drawable/ic_menu_subtraction"
+        android:id="@+id/subtraction"/>
+
+    <item android:title="@string/nav_multiplication"
+        android:icon="@drawable/ic_menu_multiplication"
+        android:id="@+id/multiplication"/>
+
+    <item android:title="@string/nav_division"
+        android:icon="@drawable/ic_menu_division"
+        android:id="@+id/division"/>
+
+</group>
+
+
+    <item android:title="@string/communicate">
+
+
+    <menu>
+
+    <item android:title="@string/settings"
+        android:icon="@drawable/ic_menu_settings"
+        android:id="@+id/Settings"/>
+
+    <item android:title="@string/rate"
+        android:icon="@drawable/ic_menu_rate"
+        android:id="@+id/nav_rate"/>
+
+    <item android:title="@string/refer"
+        android:icon="@drawable/ic_menu_share"
+        android:id="@+id/nav_share"/>
+
+    <item android:title="@string/more"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:id="@+id/nav_apps"/>
+
+</menu>
+
+</item>
+
+</menu>

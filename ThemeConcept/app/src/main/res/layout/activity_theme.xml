@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/backgroundColor"
+    tools:context=".ThemeActivity">
+    <TextView
+        android:id="@+id/activity_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Change Theme"
+        android:textColor="?attr/textColor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activity_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/option_1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+       android:background="@color/white"
+        android:gravity="center"
+        android:text="Blue"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        ads:layout_constraintEnd_toStartOf="@+id/option_2"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@id/switchCompat" />
+
+    <Button
+        android:id="@+id/option_2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Red"
+        android:background="@color/primaryColorDark_red"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        ads:layout_constraintEnd_toStartOf="@id/option_3"
+        ads:layout_constraintStart_toEndOf="@+id/option_1"
+        ads:layout_constraintTop_toBottomOf="@id/switchCompat"
+        />
+
+    <Button
+        android:id="@+id/option_3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/primaryColor_green"
+        android:gravity="center"
+        android:text="Green"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        ads:layout_constraintStart_toEndOf="@+id/option_2"
+        ads:layout_constraintTop_toBottomOf="@id/switchCompat"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

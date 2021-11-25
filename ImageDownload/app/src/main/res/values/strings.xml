@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ImageDownload</string>
+    <string name="abhi_images">abhi Images</string>
+    <string name="t_point_images">T Point Images</string>
+    <string name="url_image">Url Image</string>
+    <string name="download">Download</string>
+    <string name="images">images</string>
+    <string name="button">button</string>
+    <string name="resize">resize</string>
+    <string name="centrecrop">centrecrop</string>
+    <string name="centreinside">centreinside</string>
+    <string name="fit">fit</string>
+    <string name="placeholder">placeholder</string>
+    <string name="error">error</string>
+    <string name="no_fade">no fade</string>
+    <string name="callback">callback</string>
+    <string name="rotate">rotate</string>
+    <string name="complex_rotation">Complex Rotation</string>
+</resources>

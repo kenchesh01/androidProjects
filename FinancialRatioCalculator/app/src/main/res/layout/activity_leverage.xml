@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Leverage">
+
+    <ScrollView
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:scrollbarStyle="insideOverlay"
+        android:layout_marginLeft="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title"
+                android:layout_marginTop="8dp"
+                android:text="@string/menu_leverage"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/activity_information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:text="@string/select_calculator"
+                android:textColor="#000000"
+                android:textSize="@dimen/body"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/activity_label" />
+
+            <ImageView
+                android:id="@+id/debt_equity"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/label_debt_equity"
+                android:gravity="center"
+                android:onClick="debt_equity"
+                ads:layout_constraintEnd_toStartOf="@id/debt_ratio"
+                ads:layout_constraintStart_toStartOf="@id/activity_information"
+                ads:layout_constraintTop_toBottomOf="@id/activity_information"
+                app:srcCompat="@mipmap/ic_debt_equity" />
+
+            <ImageView
+                android:id="@+id/debt_ratio"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/label_debt_ratio"
+                android:gravity="center"
+                android:onClick="debt_ratio"
+                ads:layout_constraintEnd_toEndOf="@id/activity_information"
+                ads:layout_constraintStart_toEndOf="@id/debt_equity"
+                ads:layout_constraintTop_toBottomOf="@id/activity_information"
+                app:srcCompat="@mipmap/ic_debt_ratio" />
+
+            <TextView
+                android:id="@+id/label_debt_equity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="debt_equity"
+                android:text="@string/label_debt_equity"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@+id/debt_equity"
+                ads:layout_constraintStart_toStartOf="@id/debt_equity"
+                ads:layout_constraintTop_toBottomOf="@id/debt_equity" />
+
+            <TextView
+                android:id="@+id/label_debt_ratio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="debt_ratio"
+                android:text="@string/label_debt_ratio"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@+id/debt_ratio"
+                ads:layout_constraintStart_toStartOf="@id/debt_ratio"
+                ads:layout_constraintTop_toBottomOf="@id/debt_ratio" />
+
+            <ImageView
+                android:id="@+id/equity_ratio"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/equity_ratio"
+                android:onClick="equity_ratio"
+                ads:layout_constraintEnd_toStartOf="@id/coverage_ratio"
+                ads:layout_constraintStart_toStartOf="@id/activity_information"
+                ads:layout_constraintTop_toBottomOf="@id/label_debt_equity"
+                app:srcCompat="@mipmap/ic_equity_ratio_icon" />
+
+            <ImageView
+                android:id="@+id/coverage_ratio"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/icon"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/label_coverage_ratio"
+                android:gravity="center"
+                android:onClick="coverage_ratio"
+                ads:layout_constraintEnd_toEndOf="@id/activity_information"
+                ads:layout_constraintStart_toEndOf="@id/equity_ratio"
+                ads:layout_constraintTop_toBottomOf="@id/label_debt_ratio"
+                app:srcCompat="@mipmap/ic_coverage_ratio" />
+
+            <TextView
+                android:id="@+id/label_equity_ratio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="equity_ratio"
+                android:text="@string/label_equity_ratio"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@+id/equity_ratio"
+                ads:layout_constraintStart_toStartOf="@id/equity_ratio"
+                ads:layout_constraintTop_toBottomOf="@id/equity_ratio" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="coverage_ratio"
+                android:text="@string/label_coverage_ratio"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@+id/coverage_ratio"
+                ads:layout_constraintStart_toStartOf="@id/coverage_ratio"
+                ads:layout_constraintTop_toBottomOf="@id/coverage_ratio" />
+
+            <TextView
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                ads:layout_constraintEnd_toEndOf="@id/guideline_end"
+                ads:layout_constraintStart_toStartOf="@id/guideline_start"
+                ads:layout_constraintTop_toBottomOf="@id/label_equity_ratio"  />
+
+            <TextView
+                android:id="@+id/leverage_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/white"
+                android:gravity="start|top"
+                android:text="@string/menu_leverage"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/body"
+                android:textStyle="bold"
+                ads:layout_constraintEnd_toEndOf="@id/guideline_end"
+                ads:layout_constraintStart_toStartOf="@id/guideline_start"
+                ads:layout_constraintTop_toBottomOf="@id/divider" />
+
+            <TextView
+                android:id="@+id/leverage_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="start|top"
+                android:background="#e7e7e7"
+                android:text="@string/info_leverage"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintEnd_toEndOf="@id/guideline_end"
+                ads:layout_constraintStart_toStartOf="@id/guideline_start"
+                ads:layout_constraintTop_toBottomOf="@id/leverage_heading" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                ads:layout_constraintEnd_toEndOf="@id/guideline_end"
+                ads:layout_constraintStart_toStartOf="@id/guideline_start"
+                ads:layout_constraintTop_toBottomOf="@id/leverage_description" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                ads:layout_constraintGuide_begin="20dp"
+                ads:layout_constraintGuide_percent=".10" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                ads:layout_constraintGuide_begin="20dp"
+                ads:layout_constraintGuide_percent=".90" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

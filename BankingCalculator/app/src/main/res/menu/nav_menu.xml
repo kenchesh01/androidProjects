@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/main_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home_page"/>
+
+        <item android:id="@+id/CD"
+            android:icon="@drawable/ic_deposit"
+            android:title="@string/calculator_CD"/>
+
+        <item android:id="@+id/savings"
+            android:icon="@drawable/ic_savings"
+            android:title="@string/calculator_savings"/>
+
+        <item android:id="@+id/savings_goal"
+            android:icon="@drawable/ic_goal"
+            android:title="@string/calculator_goal"/>
+        <item android:id="@+id/investedCalculator"
+            android:icon="@drawable/ic_returns"
+            android:title="@string/investment_calculator"/>
+    </group>
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rating"
+                android:title="@string/rate" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/refer" />
+
+            <item android:id="@+id/nav_apps"
+                android:icon="@drawable/ic_gallery"
+                android:title="@string/more"/>
+        </menu>
+    </item>
+    <item android:title="@string/label_store">
+        <menu>
+            <item
+                android:id="@+id/store_purchase"
+                android:icon="@drawable/ic_goal"
+                android:title="@string/purchase" />
+        </menu>
+    </item>
+</menu>

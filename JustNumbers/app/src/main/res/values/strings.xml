@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+
+    <resources>
+
+    <!--Common UI Strings -->
+
+
+    <string name="app_name">Math Facts</string>
+
+    <string name="app_message_title">Math Made Easy!</string>
+
+    <string name="app_message">Choose from the following operators and select an activity to start practice:</string>
+
+    <string name="info">Each activity designed based on gaming concept. One point for each correct answer. By default each activity consists of 20 math problems.Go to settings to increase number of math problems on each activity. At the end of each activity you can review and redo your mistakes if any.</string>
+
+    <string name="label_facts">Math Facts</string>
+
+    <string name="math_facts">Math facts helps students practice and mastering math skills.Our app offers addition, subtraction, multiplication and division math facts, to build, develop, math skills.Users can choose an operator and then select an activity to practice and explore interactive activities like adding and subtraction facts, learning multiplication tables and understanding division.</string>
+
+    <string name="label_solve">Problem Solving</string>
+
+    <string name="problem_solving">Solving problems and connecting math to daily life helps students to build mental skills, develop logical analysis and boost creative thinking.Our app offers addition, subtraction, multiplication and division math word problems, students can practice and learn about measurement and solve equation.Users can choose an operator and then select an activity to practice and solving problems</string>
+
+    <string name="label_three">Select an activity</string>
+
+    <string name="home">Home</string>
+
+    <string name="addition">+</string>
+
+    <string name="subtraction">-</string>
+
+    <string name="multiplication">X</string>
+
+    <string name="division">÷</string>
+
+    <string name="open">Open</string>
+
+    <string name="close">Close</string>
+
+    <string name="home_page">Home</string>
+
+    <string name="nav_addition">Addition</string>
+
+    <string name="nav_subtraction">Subtraction</string>
+
+    <string name="nav_multiplication">Multiplication</string>
+
+    <string name="nav_division">Division</string>
+
+    <string name="activity_addition">Addition</string>
+
+    <string name="activity_subtraction">Subtraction</string>
+
+    <string name="activity_multiplication">Multiplication</string>
+
+    <string name="activity_division">Division</string>
+
+    <string name="rate">Rate this app</string>
+
+    <string name="refer">Refer this app</string>
+
+    <string name="more">More apps from us</string>
+
+    <string name="word_problem">Word Problem</string>
+
+    <string name="solve">Solve the problem</string>
+
+    <string name="select">ENT</string>
+
+    <string name="submit">Check</string>
+
+    <string name="equals">=</string>
+
+    <string name="question_mark">"?"</string>
+
+    <string name="equation_question">What number is a?</string>
+
+    <string name="equation_value">a</string>
+
+    <string name="score_display">Score:</string>
+
+    <string name="label2">What is</string>
+
+    <string name="answer">Answer</string>
+
+    <string name="grade">Awesome!!!</string>
+
+    <string name="retry">Retry</string>
+
+    <string name="levelUp">Next</string>
+
+    <string name="rate_us">Rate Us</string>
+
+    <string name="empty"> </string>
+
+    <string name="communicate">Communicate</string>
+
+    <string name="wrong_answer">Sorry, the Answer is </string>
+
+    <string name="correct_answer">Correct!</string>
+
+    <string name="score_message">/20</string>
+
+    <string name="score_message2">You scored </string>
+
+    <string name="score_message3"> out of 20</string>
+
+    <string name="result_greeting1">Awesome!!!</string>
+
+    <string name="result_greeting2">Excellent!</string>
+
+    <string name="result_greeting3">Good Work!</string>
+
+    <string name="result_greeting4">Try Again!</string>
+
+    <string name="timer_off">Stop</string>
+
+    <string name="hint_clock">0:00</string>
+
+    <string name="timer">Timer</string>
+
+    <string name="off">Off</string>
+
+    <string name="on">On</string>
+
+    <string name="number_of_problems">Number of Problems</string>
+
+    <string name="twenty">20</string>
+
+    <string name="fifty">50</string>
+
+    <string name="seventyFive">75</string>
+
+    <string name="hundred">100</string>
+
+    <string name="redo_mistakes">Redo Mistake Problems</string>
+
+    <string name="problem">Problem#</string>
+
+    <string name="problem_set">Problem Set</string>
+
+    <string name="input">Your Answered</string>
+
+    <string name="result">Answer</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="redo_mistake_problems">Redo Mistake</string>
+
+    <string name="one">1</string>
+
+    <string name="two">2</string>
+
+    <string name="three">3</string>
+
+    <string name="four">4</string>
+
+    <string name="five">5</string>
+
+    <string name="six">6</string>
+
+    <string name="seven">7</string>
+
+    <string name="eight">8</string>
+
+    <string name="nine">9</string>
+
+    <string name="zero">0</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Addition and Subtraction Module -->
+
+
+    <string name="two_digit">2-Digits and 1-Digit </string>
+
+    <string name="three_digit">3-Digits and 2-Digits </string>
+
+    <string name="two_digits">2-Digits</string>
+
+    <string name="three_digits">3-Digits</string>
+
+    <string name="three_addends">3 Addends</string>
+
+    <string name="doubles">Doubles</string>
+
+    <string name="equations">Equation</string>
+
+    <string name="expanded_method">Expanded Method</string>
+
+    <!--Multiplication Module -->
+
+
+    <string name="multiples_two">Multiples of 2 and 4</string>
+
+    <string name="multiples_three">Multiples of 3 and 6</string>
+
+    <string name="multiples_five">Multiples of 5 and 10</string>
+
+    <string name="multiples_seven">Multiples of 7, 8, 9</string>
+
+    <string name="multiples_tens">Multiplying by Tens</string>
+
+    <string name="multiples_more">Multiply 3 or more numbers</string>
+
+    <string name="multiples_digit">Multiply 2-Digits by 1-Digit</string>
+
+    <string name="multiples_digits">Multiply 3-Digits by 1-Digit </string>
+
+    <!--Division Module -->
+
+
+    <string name="divide_two">Divide by 2 or 4</string>
+
+    <string name="divide_three">Divide by 3 or 6</string>
+
+    <string name="divide_five">Divide by 5 or 10</string>
+
+    <string name="divide_seven">Divide by 7, 8, 9</string>
+
+    <string name="division_ten">Divide by 10, 100, 1000</string>
+
+    <string name="division_digit">2-Digits by 1-Digit</string>
+
+    <string name="division_2digits">2-Digits by 2-Digits</string>
+
+    <string name="division_digits">3-Digits by 2-Digits</string>
+
+    <!-- - Ad mob Banner Test ID: ca-app-pub-3940256099942544/6300978111Ad mob Interstitial test ad id: ca-app-pub-3940256099942544/1033173712 <!- -->
+
+
+    <string name="banner_ad_unit_id"> ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+</resources>

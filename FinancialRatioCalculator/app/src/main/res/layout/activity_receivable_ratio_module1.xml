@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceivableRatioModule1">
+
+    <ScrollView
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:scrollbarStyle="insideOverlay">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/receivable_ratio"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/heading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/activity_information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/info_receivable_ratio"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/quote"
+                ads:layout_constraintTop_toBottomOf="@id/activity_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/label_1"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="fill_vertical"
+                android:text="@string/net_sales"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toStartOf="@+id/user_input1"
+                ads:layout_constraintStart_toStartOf="@+id/activity_information"
+                ads:layout_constraintTop_toBottomOf="@id/activity_information" />
+
+            <EditText
+                android:id="@+id/user_input1"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:background="#e7e7e7"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/user_input"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toEndOf="@id/activity_information"
+                ads:layout_constraintStart_toEndOf="@+id/label_1"
+                ads:layout_constraintTop_toBottomOf="@id/activity_information" />
+
+            <TextView
+                android:id="@+id/label_2"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="fill_vertical"
+                android:text="@string/accounts_receivable_begin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toStartOf="@id/user_input2"
+                ads:layout_constraintStart_toStartOf="@id/activity_information"
+                ads:layout_constraintTop_toBottomOf="@id/label_1" />
+
+            <EditText
+                android:id="@+id/user_input2"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:background="#e7e7e7"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/user_input"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toEndOf="@id/activity_information"
+                ads:layout_constraintStart_toEndOf="@+id/label_2"
+                ads:layout_constraintTop_toBottomOf="@id/user_input1" />
+            <TextView
+                android:id="@+id/label_3"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="fill_vertical"
+                android:text="@string/accounts_receivable_end"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toStartOf="@id/user_input3"
+                ads:layout_constraintStart_toStartOf="@id/activity_information"
+                ads:layout_constraintTop_toBottomOf="@id/label_2" />
+
+            <EditText
+                android:id="@+id/user_input3"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:background="#e7e7e7"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/user_input"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toEndOf="@id/activity_information"
+                ads:layout_constraintStart_toEndOf="@+id/label_3"
+                ads:layout_constraintTop_toBottomOf="@id/user_input2" />
+
+            <Button
+                android:id="@+id/button_calculate"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/green"
+                android:text="@string/button_calculate"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toStartOf="@id/reset"
+                ads:layout_constraintStart_toStartOf="@+id/activity_information"
+                ads:layout_constraintTop_toBottomOf="@id/label_3"
+                app:backgroundTint="@color/green" />
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/red"
+                android:onClick="activity_reset"
+                android:text="@string/button_reset"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/body"
+                ads:layout_constraintEnd_toEndOf="@id/activity_information"
+                ads:layout_constraintStart_toEndOf="@+id/button_calculate"
+                ads:layout_constraintTop_toBottomOf="@id/user_input3"
+                app:backgroundTint="@color/red" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

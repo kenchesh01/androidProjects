@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="app_name_info">A letter is a written message
+        conveyed from one person to another through a medium.
+        The term usually excludes written material intended to
+        be read in its original form by large numbers of people,
+        such as newspapers and placards; however even these may
+        include material in the form of an "open letter".</string>
+</resources>

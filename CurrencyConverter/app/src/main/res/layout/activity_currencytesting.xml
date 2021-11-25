@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Currencytesting">
+
+    <TextView
+        android:id="@+id/convertFromTitle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Convert From"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/convertToTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/convertToTitle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Convert To"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/convertFromTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Spinner
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/convert_from_dropdown_menu"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/convert_to_dropdown_menu"
+        app:layout_constraintTop_toBottomOf="@+id/convertFromTitle"
+        />
+    <Spinner
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/convert_to_dropdown_menu"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/convert_from_dropdown_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertToTitle"
+        />
+
+    <TextView
+        android:id="@+id/amountToConvertTextValue"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ConvertResultText"
+        app:layout_constraintTop_toBottomOf="@id/convert_from_dropdown_menu"
+        android:layout_marginTop="35dp"
+        android:text="Amount to convert"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/ConvertResultText"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amountToConvertTextValue"
+        app:layout_constraintTop_toBottomOf="@id/convert_from_dropdown_menu"
+        android:layout_marginTop="35dp"
+        android:text="Conversion rate"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/amountConvertEditText"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/conversionResult"
+        app:layout_constraintTop_toBottomOf="@+id/amountToConvertTextValue"
+        />
+    <TextView
+        android:id="@+id/conversionResult"
+        android:layout_width="180dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConvertResultText"
+        app:layout_constraintStart_toEndOf="@+id/amountToConvertTextValue"/>
+    <Button
+        android:id="@+id/conversionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conversionResult"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
